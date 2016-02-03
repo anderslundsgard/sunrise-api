@@ -1,6 +1,7 @@
 var express = require('express');//,
 var xml = require('xml');
 var app = express();
+var suncalc = require('suncalc');
 
 app.get('/xml', function(req, res) {
     var xmlresult = {
@@ -11,7 +12,9 @@ app.get('/xml', function(req, res) {
 });
 
 app.get('*', function(req, res) {
-    res.json({ape: 'APe', roo: 21})
+    // get today's sunlight times for London
+    var times = suncalc.getTimes(new Date(), 59.313, 18.065);
+    res.json(times);
 });
 
 var port = 3000;
