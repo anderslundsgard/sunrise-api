@@ -1,0 +1,19 @@
+{
+  "name": "sunrise-api",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Anders Lundsgard"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/anderslundsgard/sunrise-api",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ]
+}
