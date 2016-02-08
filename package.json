@@ -18,6 +18,7 @@
   "homepage": "https://github.com/anderslundsgard/sunrise-api#readme",
   "dependencies": {
     "express": "^4.13.4",
+    "mongoose": "^4.4.2",
     "suncalc": "^1.7.0",
     "xml": "^1.0.1"
   }
