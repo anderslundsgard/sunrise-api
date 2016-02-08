@@ -1,7 +1,15 @@
-var express = require('express');//,
+var express = require('express');
 var xml = require('xml');
 var app = express();
 var suncalc = require('suncalc');
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/sunrisedb');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error...'));
+db.once('open', function callback() {
+    console.log('multivision db opened');
+});
 
 app.get('/xml', function(req, res) {
     var xmlresult = {
