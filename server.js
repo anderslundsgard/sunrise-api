@@ -19,6 +19,7 @@ app.get('/xml', function(req, res) {
     res.send(xml(xmlresult));
 });
 
+// Sample call: http://localhost:3000/?lat=59.2&lon=17.4&date=2016-01-14
 app.get('*', function(req, res) {
     var lat = req.query.lat;
     var lon = req.query.lon;
