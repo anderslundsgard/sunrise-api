@@ -20,8 +20,10 @@ app.get('/xml', function(req, res) {
 });
 
 app.get('*', function(req, res) {
-    // get today's sunlight times for London
-    var times = suncalc.getTimes(new Date(), 59.313, 18.065);
+    var lat = req.query.lat;
+    var lon = req.query.lon;
+    var date = new Date(req.query.date);
+    var times = suncalc.getTimes(date, lat, lon);
     res.json(times);
 });
 
