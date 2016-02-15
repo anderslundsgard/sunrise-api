@@ -1,5 +1,4 @@
 var express = require('express');
-var xml = require('xml');
 var app = express();
 var suncalc = require('suncalc');
 var mongoose = require('mongoose');
