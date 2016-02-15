@@ -11,14 +11,6 @@ db.once('open', function callback() {
     console.log('multivision db opened');
 });
 
-app.get('/xml', function(req, res) {
-    var xmlresult = {
-    APe: "35", Mandis: "32"
-    };
-    res.set('Content-Type', 'text/xml');
-    res.send(xml(xmlresult));
-});
-
 // Sample call: http://localhost:3000/?lat=59.2&lon=17.4&date=2016-01-14
 app.get('*', function(req, res) {
     var lat = req.query.lat;
