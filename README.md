@@ -7,5 +7,5 @@
 * Run: bower install
 
 ## Run
-From root dir of git repo run: node server.js
-Sample call: http://localhost:3000/?lat=59.2&lon=17.4&date=2015-01-14
+* From root dir of git repo run: **node server.js**
+* Sample call: **http://localhost:3000/?lat=59.2&lon=17.4&date=2015-01-14**
