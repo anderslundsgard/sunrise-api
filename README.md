@@ -1,4 +1,5 @@
 # sunrise-api
+A node.js app to get sun and moon info from lat and long positions. Uses the excellent package https://github.com/mourner/suncalc.
 
 ## Installation
 * Download and install Node.js
