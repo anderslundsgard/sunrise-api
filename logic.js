@@ -1,3 +1,4 @@
+var logic = require('./logic.js');
 
 exports.sunrise = function(lat, lon, date){
 
@@ -21,4 +22,4 @@ exports.sunrise = function(lat, lon, date){
     alltimes["moonangle"] = moonillumination["angle"];
 
     return alltimes;
-}
+};
